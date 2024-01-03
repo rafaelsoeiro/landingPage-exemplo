@@ -1,14 +1,17 @@
-:root{
-  --color-primary:#1C448E;
-  --color-dark:#040404;
-  --font-color-white:#fff
-  
+:root {
+  --color-primary: #317817;
+  --color-dark: #040404;
+  --color-white: #fff;
+  --color-ligth-gray: #eee;
+  --gap: 3rem;
+
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -18,8 +21,6 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,23 +46,92 @@ h4 {
 
 h5 {
   font-size: 3rem;
-} 
+}
 
 h6 {
   font-size: 2.5rem;
 }
-.main-bg{
+
+a {
+  text-decoration: none;
+}
+
+.main-bg {
   /* background-image: url(./../assets/main-bg.svg); */
   background-image: url(./../assets/green-vortex.svg);
   background-position: center center;
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  color: var(--font-color-white);
+  background-repeat: no-repeat;
+  height: 100%;
+  color: var(--color-white);
 }
-.main-content{
+
+.main-content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: var(--gap);
 }
-.section{
+
+.section {
   min-height: 100vh;
+}
+
+.menu {
+  background: var(--color-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-ligth-gray);
+}
+
+.menu h1 {
+  font-size: 2.3rem;
+  color: var(--color-dark);
+}
+
+.menu h1 a {
+  color: inherit;
+
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+}
+
+.menu ul li a {
+  display: block;
+  color: var(--color-dark);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: var(--color-primary);
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  left: 25%;
+  width: 50%;
+
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }

@@ -77,9 +77,23 @@ a {
   margin: 0 auto;
   padding: var(--gap);
 }
+.main-content h2{
+  font-size: 3rem;
+}
+.main-content h3{
+  font-size: 2rem;
+}
 
 .section {
   min-height: 100vh;
+  padding-top: 6.5rem;
+}
+.section-head h2{
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+.section-head p{
+  margin-bottom: 2rem;
 }
 
 .menu {
@@ -143,10 +157,6 @@ a {
   padding: 0;
 }
 
-.intro {
-  margin-top: 7rem;
-}
-
 .intro-content {
   position: relative;
   /* top: -8rem; */
@@ -167,15 +177,34 @@ a {
 }
 .top3-content{
   max-width: 80rem;
-  
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  flex-flow: column nowrap;
   justify-content: center;
   text-align: center;
 }
-.top3-content h2{
-  margin-bottom: 3rem;
+
+
+.top3jobs-content, .gallery-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
 }
-.top3-content p{
-  margin-bottom: 2rem;
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: var(--gap);
+}
+.img-gallery{
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+.img-gallery img{
+  transform: scale(0.95);
+  transition: all ease-in-out 250ms;
+}
+.img-gallery img:hover{
+  transform: scale(1.2) translate(-3%,3%) rotate(5deg);
 }

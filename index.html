@@ -5,32 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
-  <title>exemple</title>
+  <title>ByteForge</title>
 </head>
 
 <body class="main-bg">
-  <aside class="menu">
+  <header class="menu">
     <div class="main-content menu-content">
-
-      <h1><a href="#">LOGO</a></h1>
+      <h1>
+        <a href="#"><img src="./assets/logo.png" alt="logo"></a>
+      </h1>
       <nav>
         <ul>
-          <li><a href="#intro">intro</a></li>
-          <li><a href="#top3">top 3</a></li>
-          <li><a href="#top3jobs">top 3 jobs</a></li>
-          <li><a href="#gallery">gallery</a></li>
-          <li><a href="#pricing">pricing</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#intro">home</a></li>
+          <li><a href="#services">serviços</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#about">Sobre nós</a></li>
         </ul>
       </nav>
+      <button><a href="#contact">contact</a></button>
     </div>
-  </aside>
-  <section id="intro" class="section  main-bg">
+  </header>
+  <section id="intro" class="section main-bg">
     <div class="main-content intro-content">
       <div class="intro-text-content">
         <h2>Intro</h2>
@@ -43,27 +50,10 @@
       </div>
     </div>
   </section>
-  <section id="top3" class="section white-bg">
-    <div class="main-content top3-content">
-      <h2>Top 3</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro earum inventore, hic incidunt illum
-        architecto reiciendis, molestiae explicabo fugit laboriosam accusantium, similique nulla quaerat?</p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, enim provident. Sint est ex iure.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, qui at, labore perspiciatis quos porro
-        error,
-        laudantium fugiat excepturi molestias cumque ipsa placeat! Enim, vitae!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro earum inventore, hic incidunt illum
-        architecto reiciendis, molestiae explicabo fugit laboriosam accusantium, similique nulla quaerat?</p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, enim provident. Sint est ex iure.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, qui at, labore perspiciatis quos porro
-        error,
-        laudantium fugiat excepturi molestias cumque ipsa placeat! Enim, vitae!</p>
-    </div>
-  </section>
-  <section id="top3jobs" class="main-bg section">
-    <div class="main-content top3jobs-content">
+  <section id="services" class="section white-bg">
+    <div class="main-content services-content">
       <div class="section-head">
-        <h2>Test title 2</h2>
+        <h2>Services</h2>
         <p>plan consider swam sharp guard temperature son brother cheese comfortable rough success hurt happened root
           clear trick bent then tent fur beneath space directlyLorem ipsum dolor sit amet consectetur adipisicing elit.
           Ipsa, eius repellendus. Maiores voluptatem labore
@@ -88,8 +78,9 @@
       </div>
     </div>
   </section>
-  <section id="gallery" class="white-bg section">
-    <div class="main-content gallery-content">
+
+  <section id="portfolio" class="main-bg section">
+    <div class="main-content portfolio-content">
       <div class="section-head">
         <h2>gallery</h2>
         <p>plan consider swam sharp guard temperature son brother cheese comfortable rough success hurt happened root
@@ -98,70 +89,36 @@
           repellat.</p>
       </div>
       <div class="grid">
-
-        <div class="img-gallery">
+        <div class="img-content">
           <img src="https://source.unsplash.com/random/360x360?1" alt="unsplash random image">
         </div>
-        <div class="img-gallery">
+        <div class="img-content">
           <img src="https://source.unsplash.com/random/360x360?2" alt="unsplash random image">
         </div>
-        <div class="img-gallery">
+        <div class="img-content">
           <img src="https://source.unsplash.com/random/360x360?3" alt="unsplash random image">
         </div>
-        <div class="img-gallery">
+        <div class="img-content">
           <img src="https://source.unsplash.com/random/360x360?4" alt="unsplash random image">
         </div>
-        <div class="img-gallery">
+        <div class="img-content">
           <img src="https://source.unsplash.com/random/360x360?5" alt="unsplash random image">
         </div>
-        <div class="img-gallery">
+        <div class="img-content">
           <img src="https://source.unsplash.com/random/360x360?6" alt="unsplash random image">
         </div>
       </div>
 
     </div>
   </section>
-  <section id="pricing" class="section white-bg">
+  <section id="about" class="section white-bg">
     <div class="main-content">
-      <div class="section-head">
+      <div class="section-head about-content">
         <h2>pricing</h2>
         <p>government wind get there test automobile silver court travel this harbor market drawn somebody vowel kids
           taste melted mark meal ran case appropriate electricLorem ipsum dolor sit amet consectetur adipisicing elit.
           Sunt porro earum inventore, hic incidunt illum
           architecto reiciendis, molestiae explicabo fugit laboriosam accusantium, similique nulla quaerat?</p>
-      </div>
-
-      <div class="responsive-table">
-        <table>
-          <caption>Pricinig table</caption>
-          <thead>
-            <th>Item 1</th>
-            <th>Item 2</th>
-            <th>Item 3</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>R$ 31,00</td>
-              <td>R$ 32,00</td>
-              <td>R$ 58,00</td>
-            </tr>
-            <tr>
-              <td>R$ 40,00</td>
-              <td>R$ 69,00</td>
-              <td>R$ 81,00</td>
-            </tr>
-            <tr>
-              <td>R$ 18,00</td>
-              <td>R$ 35,00</td>
-              <td>R$ 50,00</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">testando</td>
-            </tr>
-          </tfoot>
-        </table>
       </div>
     </div>
   </section>
@@ -198,7 +155,7 @@
               <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
             </div>
             <div class="form-group">
-              <input type="submit" value="Enviar">
+              <input type="submit" value="Enviar" class="btn">
             </div>
           </form>
           </form>
@@ -207,7 +164,7 @@
     </div>
   </section>
   <footer class="white-bg">
-    <p>Desenvolvido por <a href="https://github.com/rafaelsoeiro">Rafael Soeiro</a></p>
+    <a href="https://github.com/rafaelsoeiro"> Desenvolvido com <span>♥</span> por Rafael Soeiro</a>
   </footer>
 </body>
 

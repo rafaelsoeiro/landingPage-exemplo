@@ -1,0 +1,14 @@
+.services-content {
+  max-width: 80rem;
+  display: grid;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  color: var(--color-text-white);
+}

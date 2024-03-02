@@ -1,0 +1,39 @@
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.img-content {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.img-content img {
+  transition: all ease-in-out 250ms;
+}
+
+.img-content img:hover {
+  transform: scale(1.2) translate(-3%, 3%);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:576) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,18 +1,18 @@
 .menu {
-  background: transparent;
-  /* background: var(--color-white); */
+  background: var(--color-dark-40);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1;
-  /* border-bottom: 1px solid var(--color-ligth-gray); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .menu img {
   width: 4rem;
   color: var(--color-dark);
+  margin: 1rem 0;
 }
 
 .menu ul {
@@ -43,4 +43,16 @@
   justify-content: space-around;
   align-items: center;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .menu nav ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
 }

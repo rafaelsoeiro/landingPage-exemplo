@@ -2,7 +2,10 @@
   --color-primary: #3E6FBF;
   --color-primary-dark: #1E2852;
   --color-secondary: #A4C639;
+  --color-secondary-dark: #91AE32;
   --color-dark: #040404;
+  --color-dark-40: rgba(4, 4, 4, 0.4);
+  --color-dark-overlay: rgba(4, 4, 4, 0.25);
   --color-ligth-dark: #141414;
   --color-gray: #808080;
   --color-ligth-gray: #eee;
@@ -16,7 +19,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 html {
@@ -62,7 +64,9 @@ a {
   text-decoration: none;
 }
 
-
+p {
+  font-size: 1.6rem;
+}
 
 footer {
   width: 100%;
@@ -81,8 +85,9 @@ footer a span {
 }
 
 .main-bg {
-  /* background-image: url(./../assets/main-bg.svg); */
   background-image: url(./../assets/pattern-randomized.svg);
+  background-color: var(--color-dark-overlay);
+  background-blend-mode: multiply;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,11 +126,78 @@ footer a span {
 
 .section-head p {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
-@media (max-width: 768px) {}
+.destaque {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
 
-@media(max-width:576) {
+.btn {
+  padding: 1rem 2rem;
+  transition: var(--transition);
+  background: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  border-radius: 15px;
+  font-size: 1.7rem;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-text-white);
+  border: 1px solid var(--color-secondary-dark);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .section-head h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    max-width: 100rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
   .contact-grid {
     display: flex;
     flex-direction: column;
@@ -135,4 +207,18 @@ footer a span {
     width: 80%;
   }
 
+  .section {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img img {
+    width: 80%;
+  }
 }

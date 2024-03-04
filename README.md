@@ -8,7 +8,6 @@ Esta é uma landing page responsiva simples criada utilizando apenas HTML5 e CSS
 - [Como Utilizar](#como-utilizar)
 - [Recursos Utilizados](#recursos-utilizados)
 - [Autor](#autor)
-- [Licença](#licença)
 
 ## Estrutura de Arquivos
 
@@ -40,7 +39,3 @@ landing-page/ <br>
 
 <img alt="Rafael soeiro" title="Rafael Soeiro" src="https://avatars.githubusercontent.com/u/103294767?v=4" height="100" width="100" />
 
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT) - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.

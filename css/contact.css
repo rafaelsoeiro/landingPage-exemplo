@@ -1,0 +1,80 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+
+.contact-flex {
+  display: flex;
+  flex-flow: column wrap;
+  gap: var(--gap);
+  justify-content: center;
+  color: var(--color-text-white);
+  align-items: center;
+}
+
+.contact-img img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Media query para dispositivos menores */
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    /* Alterando para uma coluna em dispositivos menores */
+  }
+
+  .contact-flex {
+    align-items: center;
+    /* Alinhamento centralizado em dispositivos menores */
+  }
+
+  .contact-img img {
+    max-width: 100%;
+    /* Ajustando a largura da imagem para preencher a largura do contêiner */
+    border-radius: 10px;
+    /* Removendo a borda superior arredondada */
+  }
+
+  form {
+    padding: 15px;
+    /* Reduzindo o preenchimento do formulário */
+  }
+}
